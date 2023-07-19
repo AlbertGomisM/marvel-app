@@ -10,6 +10,7 @@ export const Body = () => {
 
   const handlePages = (e) => {
     setPage(e.target.value)
+    setCharacters(undefined)
   }
 
   const [selectedCharacter, setSelectedCharacter] = useState(null);
@@ -42,8 +43,8 @@ export const Body = () => {
       minHeight: "200vh"
     }}>
       <div className="justify-items-center mb-5">
-        <a href="https://www.marvel.com/" target="_blank">
-          <img src="https://kartinkin.net/uploads/posts/2022-02/thumbs/1646058925_53-kartinkin-net-p-nadpis-marvel-kartinki-54.png" alt="" className="w-25" />
+        <a  href="https://www.marvel.com/" target="_blank">
+          <img id="top" src="https://kartinkin.net/uploads/posts/2022-02/thumbs/1646058925_53-kartinkin-net-p-nadpis-marvel-kartinki-54.png" alt="" className="w-25" />
         </a>
       </div>
       <div className="d-flex justify-items-center row w-75 mx-auto">
@@ -89,11 +90,25 @@ export const Body = () => {
         <div className="d-flex justify-content-center">
           {characters !== undefined &&
             <div className="gap-2 w-25 d-flex flex-row align-items-center">
+              <a href="#top">
+
               <button type="button" className={page == 0 ? "btn btn-primary col" : "btn btn-secondary col"} value={0} onClick={e => handlePages(e, "value")}>1</button>
-              <button type="button" className={page == 10 ? "btn btn-primary col" : "btn btn-secondary col"} value={10} onClick={e => handlePages(e, "value")}>2</button>
+              </a>
+              <a href="#top">
+                <button type="button" className={page == 10 ? "btn btn-primary col" : "btn btn-secondary col"} value={10} onClick={e => handlePages(e, "value")}>2</button>
+              </a>
+              <a href="#top">
+
               <button type="button" className={page == 20 ? "btn btn-primary col" : "btn btn-secondary col"} value={20} onClick={e => handlePages(e, "value")}>3</button>
+              </a>
+              <a href="#top">
+
               <button type="button" className={page == 30 ? "btn btn-primary col" : "btn btn-secondary col"} value={30} onClick={e => handlePages(e, "value")}>4</button>
+              </a>
+              <a href="#top">
+
               <button type="button" className={page == 40 ? "btn btn-primary col" : "btn btn-secondary col"} value={40} onClick={e => handlePages(e, "value")}>5</button>
+              </a>
             </div>
           }
         </div>
