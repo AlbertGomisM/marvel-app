@@ -44,7 +44,7 @@ The app will display a list of Marvel characters fetched from the Marvel API. Cl
 
 Deployment
 
-You can find an easy deployment in the following link: 
+You can find an easy deployment in the following link: https://64b82c05e565c810c5ce3066--verdant-kataifi-253bfc.netlify.app/
 ---
 Contributing
 Contributions are welcome! If you find any issues or want to add new features, feel free to submit a pull request.
